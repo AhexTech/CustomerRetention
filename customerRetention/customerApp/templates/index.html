@@ -1,0 +1,119 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="icon" href="">
+
+    <title>Dashboard || Ahex Technologies</title>
+  </head>
+  <body style="background-color: rgba(13,8,13,0.91)">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand productName" href="#">CUSRET</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Customers</a>
+              </li>
+              {#      <li class="nav-item dropdown">#}
+              {#        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+              {#          Dropdown#}
+              {#        </a>#}
+              {#        <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+              {#          <a class="dropdown-item" href="#">Action</a>#}
+              {#          <a class="dropdown-item" href="#">Another action</a>#}
+              {#          <div class="dropdown-divider"></div>#}
+              {#          <a class="dropdown-item" href="#">Something else here</a>#}
+              {#        </div>#}
+              {#      </li>#}
+              <li class="nav-item">
+                  <a class="nav-link " href="#">Products</a>
+              </li>
+          </ul>
+          {#    <form class="form-inline my-2 my-lg-0">#}
+          {#      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
+          {#      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+          {#    </form>#}
+      </div>
+  </nav>
+
+  <div class="container-fluid">
+      <span class="textcolor headerpadding" style="font-size: 20px!important;">Hello Ahex Technologies!  </span>
+      <span class="textcolor " style="float: right;font-size: 20px!important;">{{ day }}, {{ time }}</span>
+  </div>
+
+
+
+
+  <div   class="container" style="background-color: #f6fcff;width: 350px;height: 320px">
+<canvas id="line-chart" width="100" height="100"></canvas>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" ></script>
+  <script src="{% static 'js/Chart.js' %}"></script>
+
+    <script>
+      new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+    datasets: [{
+        data: [86,114,106,106,107,111,133,221,783,2478],
+        label: "Africa",
+        borderColor: "#3e95cd",
+        fill: false
+      }, {
+        data: [282,350,411,502,635,809,947,1402,3700,5267],
+        label: "Asia",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, {
+        data: [168,170,178,190,203,276,408,547,675,734],
+        label: "Europe",
+        borderColor: "#3cba9f",
+        fill: false
+      }, {
+        data: [40,20,10,16,24,38,74,167,508,784],
+        label: "Latin America",
+        borderColor: "#e8c3b9",
+        fill: false
+      }, {
+        data: [6,3,2,2,7,26,82,172,312,433],
+        label: "North America",
+        borderColor: "#c45850",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'World population per region (in millions)'
+    }
+  }
+});
+  </script>
+
+
+  </body>
+</html>

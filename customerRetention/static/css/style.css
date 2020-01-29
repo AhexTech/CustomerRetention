@@ -1,0 +1,15 @@
+.textcolor{
+    color: #eaf0ff;
+}
+.headerpadding{
+    padding-top: 10px
+}
+
+.productName{
+    font-weight: bolder;
+    font-size: 22px
+}
+
+.textSizeBig{
+    font-size: 20px!important;
+}
