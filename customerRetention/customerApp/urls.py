@@ -17,11 +17,12 @@ from django.conf.urls import url
 
 from django.conf.urls import include, url
 from customerApp.views import Index
-
+from customerApp import views
 
 urlpatterns = [
-    url(r'^$', Index, name="index"),
+    # url(r'^$', Index, name="index"),
     # url(r'^contact/$', contact, name='contact'),
+    url(r'^$', views.Index.as_view(), name='Index'),
 
 ]
 

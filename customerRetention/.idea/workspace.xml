@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97e667ed-819a-4e8c-8d3e-432c8b8157b5" name="Default Changelist" comment="" />
+    <list default="true" id="97e667ed-819a-4e8c-8d3e-432c8b8157b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/DaySalesChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/ProductCategorySalesChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/TopFiveProfit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +28,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1X1DYItk19XW9z1c0ONlc9dKvB7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,8 +44,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DjangoRestApi/project" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -70,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580204752996</updated>
       <workItem from="1580204754447" duration="6663000" />
-      <workItem from="1580271049007" duration="13874000" />
+      <workItem from="1580271049007" duration="24484000" />
+      <workItem from="1580357249734" duration="19874000" />
     </task>
     <servers />
   </component>
@@ -82,29 +100,33 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1580204826708" />
-    <state x="460" y="160" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580204922993">
+    <state x="460" y="160" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580367333609">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="460" y="160" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1580204922993" />
-    <state width="1318" height="111" key="GridCell.Tab.0.bottom" timestamp="1580278694208">
+    <state x="460" y="160" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1580367333609" />
+    <state width="1318" height="111" key="GridCell.Tab.0.bottom" timestamp="1580373706863">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="111" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1580278694208" />
-    <state width="1318" height="111" key="GridCell.Tab.0.center" timestamp="1580278694207">
+    <state width="1318" height="111" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1580373706863" />
+    <state width="1318" height="111" key="GridCell.Tab.0.center" timestamp="1580373706860">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="111" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1580278694207" />
-    <state width="1318" height="111" key="GridCell.Tab.0.left" timestamp="1580278694207">
+    <state width="1318" height="111" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1580373706860" />
+    <state width="1318" height="111" key="GridCell.Tab.0.left" timestamp="1580373706860">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="111" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1580278694207" />
-    <state width="1318" height="111" key="GridCell.Tab.0.right" timestamp="1580278694208">
+    <state width="1318" height="111" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1580373706860" />
+    <state width="1318" height="111" key="GridCell.Tab.0.right" timestamp="1580373706861">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="111" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1580278694208" />
+    <state width="1318" height="111" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1580373706861" />
     <state x="179" y="27" width="1125" height="741" key="SettingsEditor" timestamp="1580272679134">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="179" y="27" width="1125" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1580272679134" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1580378708082">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1580378708082" />
   </component>
 </project>
