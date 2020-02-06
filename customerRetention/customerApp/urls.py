@@ -23,6 +23,8 @@ urlpatterns = [
     # url(r'^$', Index, name="index"),
     # url(r'^contact/$', contact, name='contact'),
     url(r'^$', views.Index.as_view(), name='Index'),
+    url(r'^canvas/$', views.CanvasTest.as_view(), name='Canvas'),
+    url(r'^test/$', views.test.as_view(), name='test'),
 
 ]
 

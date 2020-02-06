@@ -1,0 +1,172 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon"  href="{% static 'images/aaa.png' %}">
+
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+    <style>
+    @media only screen and (max-width: 768px) {
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .paddingbottom {
+            padding-bottom: 10px;
+        }
+
+        .mobilefontSize {
+            font-size: 13px !important;
+        }
+
+        .paddingbottomforDay {
+            padding-top: 4px;
+        }
+
+
+    }
+</style>
+
+<body style="background-color: rgba(13,8,13,0.91)">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand productName" href="#">CUSRET</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="#">Products</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+
+
+<div class="container headerpadding">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 paddingbottom">
+            <div class="card" style="  width: 100%;height: 370px">
+                <div class="card-body">
+<canvas id="ctx" width="700" ></canvas>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+<script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+{#<script src="{% static 'js/Chart.js' %}"></script>#}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+    var chart = new Chart(ctx, {
+   type: 'bar',
+   data: {
+      labels: ['Standing costs', 'Running costs'], // responsible for how many bars are gonna show on the chart
+      // create 12 datasets, since we have 12 items
+      // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
+      // put 0, if there is no data for the particular bar
+      datasets: [{
+         label: 'Washing and cleaning',
+         data: [0, 8],
+         backgroundColor: '#22aa99'
+      }, {
+         label: 'Traffic tickets',
+         data: [0, 2],
+         backgroundColor: '#994499'
+      }, {
+         label: 'Tolls',
+         data: [0, 1],
+         backgroundColor: '#316395'
+      }, {
+         label: 'Parking',
+         data: [5, 2],
+         backgroundColor: '#b82e2e'
+      }, {
+         label: 'Car tax',
+         data: [0, 1],
+         backgroundColor: '#66aa00'
+      }, {
+         label: 'Repairs and improvements',
+         data: [0, 2],
+         backgroundColor: '#dd4477'
+      }, {
+         label: 'Maintenance',
+         data: [6, 1],
+         backgroundColor: '#0099c6'
+      }, {
+         label: 'Inspection',
+         data: [0, 2],
+         backgroundColor: '#990099'
+      }, {
+         label: 'Loan interest',
+         data: [0, 3],
+         backgroundColor: '#109618'
+      }, {
+         label: 'Depreciation of the vehicle',
+         data: [0, 2],
+         backgroundColor: '#109618'
+      }, {
+         label: 'Fuel',
+         data: [0, 1],
+         backgroundColor: '#dc3912'
+      }, {
+         label: 'Insurance and Breakdown cover',
+         data: [4, 0],
+         backgroundColor: '#3366cc'
+      }]
+   },
+   options: {
+      responsive: false,
+      legend: {
+         position: 'right' // place legend on the right side of chart
+      },
+      scales: {
+         xAxes: [{
+            stacked: true // this should be set to make the bars stacked
+         }],
+         yAxes: [{
+            stacked: true // this also..
+         }]
+      }
+   }
+});
+</script>
+
+  </div>
+</body>
+</html>

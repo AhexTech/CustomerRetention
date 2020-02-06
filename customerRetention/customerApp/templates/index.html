@@ -106,6 +106,48 @@
 </div>
 
 
+<div class="container">
+<table class="table">
+  <thead>
+    <tr style="background-color: white">
+      <th style="color:#000;" scope="col">Sl. No</th>
+      <th style="color:#000;" scope="col">Name</th>
+      <th style="color:#000;" scope="col">Category</th>
+      <th style="color:#000;" scope="col">Units</th>
+      <th style="color:#000;" scope="col">Price Sell</th>
+    </tr>
+  </thead>
+  <tbody>
+  {
+  {% for d in data %}
+    <tr>
+      <th style="color:#fff;" scope="row">{{forloop.counter}}</th>
+      <td style="color:#fff;">{{d.name}}</td>
+      <td style="color:#fff;">{{d.catergory}}</td>
+      <td style="color:#fff;">{{ d.units }}</td>
+      <td style="color:#fff;" >{{ d.pricesell }}</td>
+    </tr>
+
+{% endfor %}
+  <tr>
+      <th style="color:#fff;" scope="row">Total</th>
+      <td style="color:#fff;">N/A</td>
+      <td style="color:#fff;">N/A</td>
+      <td style="color:#fff;">{{ Sumunit }} Units</td>
+      <td style="color:#fff;" >Rs. {{ PricesellAdded }}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+{#{% for d in data %}#}
+{#    <span style="color: white">{{ d.pricesell }}</span> <br>#}
+{#{% endfor %}#}
+
+
+
+
 <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
 <script src="{% static 'js/popper.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
