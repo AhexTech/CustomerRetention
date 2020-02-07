@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97e667ed-819a-4e8c-8d3e-432c8b8157b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/customerApp/dashLevelOne.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customerApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customerApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customerApp/templates/canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/templates/canvas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customerApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customerApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customerRetention/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerRetention/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customerRetention/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/customerRetention/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirement.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -49,7 +49,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Django server.customerRetention">
+  <component name="RunManager" selected="Python.newfac">
     <configuration name="fac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="customerRetention" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,7 +142,8 @@
       <workItem from="1580704153158" duration="8942000" />
       <workItem from="1580788519618" duration="2821000" />
       <workItem from="1580878554905" duration="10854000" />
-      <workItem from="1580961385053" duration="12183000" />
+      <workItem from="1580961385053" duration="17845000" />
+      <workItem from="1581046778309" duration="24465000" />
     </task>
     <task id="LOCAL-00001" summary="Customer Retention">
       <created>1580385444590</created>
@@ -174,22 +175,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="460" y="160" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1580367333609" />
-    <state width="1318" height="183" key="GridCell.Tab.0.bottom" timestamp="1580979518697">
+    <state width="1318" height="183" key="GridCell.Tab.0.bottom" timestamp="1581075969598">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="183" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1580979518697" />
-    <state width="1318" height="183" key="GridCell.Tab.0.center" timestamp="1580979518696">
+    <state width="1318" height="183" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1581075969598" />
+    <state width="1318" height="183" key="GridCell.Tab.0.center" timestamp="1581075969597">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="183" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1580979518696" />
-    <state width="1318" height="183" key="GridCell.Tab.0.left" timestamp="1580979518695">
+    <state width="1318" height="183" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1581075969597" />
+    <state width="1318" height="183" key="GridCell.Tab.0.left" timestamp="1581075969596">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="183" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1580979518695" />
-    <state width="1318" height="183" key="GridCell.Tab.0.right" timestamp="1580979518696">
+    <state width="1318" height="183" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1581075969596" />
+    <state width="1318" height="183" key="GridCell.Tab.0.right" timestamp="1581075969597">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1318" height="183" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1580979518696" />
+    <state width="1318" height="183" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1581075969597" />
     <state width="1318" height="214" key="GridCell.Tab.1.bottom" timestamp="1580476388762">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -217,6 +218,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/customerRetention$fac.coverage" NAME="fac Coverage Results" MODIFIED="1580452948279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../2" />
-    <SUITE FILE_PATH="coverage/customerRetention$newfac.coverage" NAME="newfac Coverage Results" MODIFIED="1580905773115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../2" />
+    <SUITE FILE_PATH="coverage/customerRetention$newfac.coverage" NAME="newfac Coverage Results" MODIFIED="1581075969580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../2" />
   </component>
 </project>
