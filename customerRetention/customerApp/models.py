@@ -37,3 +37,19 @@ class Fruithut(models.Model):
         }
 
         return context
+
+# class PostForm(models.Model):
+#     name=models.CharField(db_column='Name',max_length=200,blank=False)
+#
+#     class Meta:
+#         managed = False
+#         db_table = 'Name'
+#
+#     def __str__(self):
+#         context={
+#             'name':self.name
+#         }
+#         return context
+#
+#     def is_valid(self):
+#         pass

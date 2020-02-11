@@ -472,3 +472,24 @@ class testJson(View):
         return render(request, 'testJson.html', {'context': data2})
 
 
+
+
+# class tesstForm(View):
+#
+#     # def get(self, request):
+#     #     return render(request, 'form.html')
+#     def post(self, request):
+#         form = PostForm(request.POST)
+#
+#         # form.save()
+#         # print(form.__str__())
+#
+#         if form.is_valid():
+#             obj = form.save(commit=False)
+#
+#             obj.save()
+#             print(form.__str__())
+#
+#         return render(request, 'form.html', )
+
+

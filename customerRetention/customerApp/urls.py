@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^canvas/$', views.CanvasTest.as_view(), name='Canvas'),
     url(r'^test/$', views.test.as_view(), name='test'),
     url(r'^testJson/$', views.testJson.as_view(), name='testJson'),
+    # url(r'^tesstForm/$', views.tesstForm.as_view(), name='tesstForm'),
 
 ]
 
